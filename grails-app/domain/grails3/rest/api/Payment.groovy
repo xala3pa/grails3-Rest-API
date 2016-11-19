@@ -2,7 +2,7 @@ package grails3.rest.api
 
 import grails.rest.Resource
 
-@Resource(uri = '/Payments')
+@Resource(uri = '/payments')
 class Payment {
     long id
     String name
