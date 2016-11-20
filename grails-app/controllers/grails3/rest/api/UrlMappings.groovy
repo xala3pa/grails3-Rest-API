@@ -9,8 +9,9 @@ class UrlMappings {
             }
         }
 
-        "/purchases"(resources: "purchase")
-        "/users"(controller: "user", method: "GET")
+        "/users"(resources: "user") {
+            "/purchases"(resources: "purchase")
+        }
 
         "/"(view:"/index")
         "500"(view:'/error')
