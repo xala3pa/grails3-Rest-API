@@ -6,6 +6,11 @@ class BootStrap {
         new Payment(id: 1, name: "purchase", amount: 12D).save()
         new Payment(id: 2, name: "invoice", amount: 120D).save()
         new Payment(id: 3, name: "taxes", amount: 100D).save()
+
+        new Purchase(id: 1, amount: 10D).save()
+        new Purchase(id: 2, amount: 20D).save()
+
+        new User(id: 1, name: "Hulk", lastName: "Hogan").save()
     }
 
     def destroy = {

@@ -2,11 +2,10 @@ package grails3.rest.api
 
 import grails.rest.Resource
 
-@Resource(uri = '/payments')
-class Payment {
+@Resource(uri= '/purchases')
+class Purchase {
 
     long id
-    String name
     BigDecimal amount
 
     static constraints = {
