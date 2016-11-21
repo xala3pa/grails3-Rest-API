@@ -1,0 +1,7 @@
+import grails3.rest.api.Ticket
+
+model{
+    Iterable<Ticket> tickets
+}
+
+json tmpl.ticket(tickets ?: [])

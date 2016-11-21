@@ -1,0 +1,10 @@
+import grails3.rest.api.Ticket
+
+model {
+    Ticket ticket
+}
+
+json {
+    id ticket.id
+    price ticket.price
+}
