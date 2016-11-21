@@ -10,7 +10,10 @@ class BootStrap {
         new User(id: 1, name: "Hulk", lastName: "Hogan")
                 .addToPurchase(new Purchase(id: 1, amount: 10D))
                 .addToPurchase(new Purchase(id: 2, amount: 20D))
-        .save()
+                .save()
+
+    new Ticket(id: 1, price: 10D).save()
+    new Ticket(id: 2, price: 20D).save()
     }
 
     def destroy = {

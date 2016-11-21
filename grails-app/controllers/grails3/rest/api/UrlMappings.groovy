@@ -13,6 +13,8 @@ class UrlMappings {
             "/purchases"(resources: "purchase")
         }
 
+        "/tickets"(resources: "ticket")
+
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
